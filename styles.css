@@ -1,7 +1,12 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
 }
 
 .background-one {
@@ -23,9 +28,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.background-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header-section,
-.hero-section,
-.footer-section {
+.hero-section {
     background-color: #1f2937;
     display: flex;
     width: 900px;
@@ -106,20 +117,17 @@ body {
 .information-images-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .information-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
-    width: 160px;
+    width: 120px;
 }
 
 .image-placeholder {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: #3882f6 solid 2px;
     border-radius: 5%;
 }
@@ -136,6 +144,7 @@ body {
 .quote-text {
     margin: 0;
     font-size: 20px;
+    font-style: italic;
 }
 
 .quote-author {
@@ -143,4 +152,44 @@ body {
     font-weight: 800;
     align-self: flex-end;
     margin-right: 50px;
+}
+
+.cta-section {
+    width: 900px;
+    padding: 50px;
+}
+
+.cta-container {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f9faf8;
+    padding: 26px;
+}
+
+.cta-title {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.cta-text {
+    margin: 0;
+}
+
+.cta-button {
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 1px solid #f9faf8;
+    padding: 4px 24px;
+    border-radius: 8px;
+}
+
+.footer-section {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 60px;
+    color: #e5e7eb;
 }
